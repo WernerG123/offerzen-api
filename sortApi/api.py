@@ -18,9 +18,9 @@ def api_array():
     #     return "Not calling sort: add ?array=5,4,3,2,1 as paramater to test"
 
     # return str(result)
-    content = request.get_json()
-    return content
-
+    content = request.json
+    result = list(content["array"])
+    return str(bubbleSort(result))
 
 
 app.run()
