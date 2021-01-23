@@ -11,7 +11,6 @@ class Sorter:
                 flat_list.append(element)   
         
         temp_list = []
-        print(flat_list)
         for element in flat_list:
 
             if str(element).isdigit():
@@ -45,6 +44,5 @@ class Sorter:
                         temp = nlist[i]
                         nlist[i] = nlist[i+1]
                         nlist[i+1] = temp
-            print(nlist)
             return nlist
 
