@@ -13,4 +13,5 @@ RUN ./setup-python-env.sh
 EXPOSE 5000
 WORKDIR /app/sortApi
 RUN chmod a+x run-api.sh
-CMD ./run-api.sh
+# CMD ./run-api.sh
+ENTRYPOINT ["./run-api.sh"]
