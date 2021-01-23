@@ -1,7 +1,7 @@
 import flask
 from flask import request, jsonify
 import bubbleSort
-from bubbleSort import bubbleSort
+from bubbleSort import *
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
@@ -11,16 +11,11 @@ def home():
 
 @app.route('/api/bubbleSort', methods=['GET', 'POST'])
 def api_array():
-    # if 'array' in request.args:
-    #     myArray = list(map(int, request.args['array'].split(",")))
-    #     result = bubbleSort(myArray)
-    # else:
-    #     return "Not calling sort: add ?array=5,4,3,2,1 as paramater to test"
-
-    # return str(result)
     content = request.json
+    
     result = list(content["array"])
-    return str(bubbleSort(result))
+
+    return str(Sorter.sort(result))
 
 
 app.run()
