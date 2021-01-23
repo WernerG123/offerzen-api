@@ -18,4 +18,4 @@ def api_array():
     return str(Sorter.sort(result))
 
 
-app.run()
+app.run(host='0.0.0.0')
