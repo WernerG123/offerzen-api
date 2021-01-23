@@ -3,7 +3,7 @@
 PYTHON=python3
 PYTHON_PIP=pip
 
-deactivate
+# deactivate
 
 # virtualenv -p ${PYTHON} venv
 
