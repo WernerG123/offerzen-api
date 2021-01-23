@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 api.py
+python3 bubbleSortTest.py && python3 api.py
