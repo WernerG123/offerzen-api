@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod a+x /sortApi/run-api.sh
+RUN chmod a+x sortApi/run-api.sh
 
 RUN ./setup-python-env.sh
 
