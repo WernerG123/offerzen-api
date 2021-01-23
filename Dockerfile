@@ -14,5 +14,5 @@ EXPOSE 5000
 WORKDIR /app/sortApi
 RUN chmod a+x run-api.sh
 # CMD ./run-api.sh
-RUN ll
+RUN ls
 ENTRYPOINT ["./run-api.sh"]
