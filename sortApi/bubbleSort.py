@@ -11,8 +11,14 @@ class Sorter:
             else:
                 flat_list.append(element)
 
-        int_flat_list = [s for s in flat_list if s.isdigit()]
-        return int_flat_list
+        print(flat_list)
+        temp_list = []
+        for element in flat_list:
+            if str(element).isdigit():
+                temp_list.append(int(element))
+        print("THIS IS THE CONVERTED LIST")
+        print(temp_list)
+        return temp_list
         
     def sort(nlist):
         print(nlist)
