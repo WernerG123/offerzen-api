@@ -11,4 +11,4 @@ RUN chmod a+x sortApi/run-api.sh
 RUN ./setup-python-env.sh
 
 EXPOSE 5000
-CMD sortApi/run-api.sh
+CMD /app/sortApi/run-api.sh
