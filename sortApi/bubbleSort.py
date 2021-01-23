@@ -1,5 +1,6 @@
 class Sorter:    
 
+# flattenArray(array) is the function which checks the list for numbers and lists, and strips out the numbers to return a clean flat list of only numbers
     def flattenArray(array):
         flat_list = []
 
@@ -20,7 +21,8 @@ class Sorter:
             self.flattenArray(temp_list)
         else:
             return temp_list
-        
+
+ # recursFlatList(flat_list) is a simple helper function to check whether a list is flat or still contains other lists(nested lists)       
     def recursFlatList(flat_list):
         listCount = 0
         for element in flat_list:
@@ -31,6 +33,7 @@ class Sorter:
         else:
             return 1
 
+# sort(nlist) is the function called to perform the sort. First step: Flatten the list!
     def sort(nlist):
         nlist=list(nlist)
         if len(nlist) > 9999:
@@ -45,4 +48,3 @@ class Sorter:
                         nlist[i] = nlist[i+1]
                         nlist[i+1] = temp
             return nlist
-
