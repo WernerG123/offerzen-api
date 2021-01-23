@@ -15,4 +15,5 @@ WORKDIR /app/sortApi
 RUN chmod a+x run-api.sh
 # CMD ./run-api.sh
 RUN ls
-ENTRYPOINT ["ls && ./run-api.sh"]
+RUN chmod 755 run-api.sh
+ENTRYPOINT ["./run-api.sh"]
